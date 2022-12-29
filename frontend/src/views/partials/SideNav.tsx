@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDashboard, faHome, faNewspaper, faSignIn, IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { faChess, faDashboard, faHome, faNewspaper, faSignIn, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import { useLocation } from 'react-router'
 
 type navButtonProps = {
@@ -23,10 +23,12 @@ const SideNav = () => {
   return (
     <aside className='sticky top-0 h-screen w-36 bg-brown-800' aria-label='Sidebar'>
       <div className='overflow-y-auto py-4 rounded'>
-        <a href='https://flowbite.com/' className='flex justify-center items-center mb-5'>
-          <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>Flowbite</span>
-          <img src='https://flowbite.com/docs/images/logo.svg' className='ml-2 h-5' alt='Flowbite Logo' />
-        </a>
+        <Link to='/' className='flex justify-center items-center mb-5'>
+          <span className='self-center text-md font-semibold whitespace-nowrap dark:text-white'>
+            Laravel tests
+          </span>
+          <FontAwesomeIcon icon={faChess} className='ml-2 text-chess-green-700 w-5 h-5'/>
+        </Link>
         <div>
           {navButtons.map(({ href, icon, text }: navButtonProps) => (
             <Link to={href} key={`navbtn-${href}`}

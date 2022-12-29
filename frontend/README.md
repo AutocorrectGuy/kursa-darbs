@@ -1,4 +1,4 @@
-# Pamācība
+# Uzstādīšana
 
 ### 1. Vispirms instalē `nodejs`:
 <br/>
@@ -32,5 +32,16 @@ Paies kāda minūte, kāmēr lejupielādēsies visas `nodejs` pakotnes. Viņas g
 
 - Šajā failā glabājas vides mainīgie šim projektam. React bibliotēkā visiem vides mainīgajiem nosaukumā priekšā jāliek `REACT_APP`. 
 - Tieši šim projektam, lai to savienot ar bekenda API portā 3001 (localhost), nepieciešams pievienot vienu vides mainīgo: `REACT_APP_API_BASE_URL=http://127.0.0.1:3001`.
+<br/>
+<br/>
+<br/>
+<br/>
+--- 
 
-000
+# Palaišana
+
+Ar cmd komandu (no šīs `./frontend` mapes):
+```cmd
+  start dev
+```
+Un vajadzētu atvērties 2 jauniem cmd logiem, kuros vienā ir `React terminal`, bet otrā `Tailwindcss wathcer`

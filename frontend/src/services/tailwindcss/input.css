@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+  .auth-page {
+    @apply my-auto sm:max-w-md w-full flex flex-col items-center px-6 mx-auto lg:py-0 p-4
+  }
   .auth-form {
     @apply space-y-4 md:space-y-6
+  }
+  .auth-form-h1 {
+    @apply text-xl font-bold leading-tight tracking-tight md:text-2xl text-center
+  }
+  .auth-form-container {
+    @apply w-full rounded-lg md:mt-0 xl:p-0 shadow-2xl border border-brown-600 bg-brown-700 p-6 space-y-4 md:space-y-6 sm:p-8
   }
   .auth-input-label {
     @apply block mb-2 text-sm font-medium
@@ -12,5 +21,10 @@
   .auth-input-field {
     @apply  border-none focus:outline-none sm:text-sm rounded-lg block w-full p-2.5 bg-brown-600 border-brown-600 placeholder-brown-400 focus:outline-brown-500
   }
-
+  .auth-footer {
+    @apply text-sm font-light text-brown-400
+  }
+  .auth-footer-a {
+    @apply font-medium hover:underline text-chess-green-700
+  }
 }
