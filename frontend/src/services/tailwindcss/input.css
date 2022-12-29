@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .auth-form {
+    @apply space-y-4 md:space-y-6
+  }
+  .auth-input-label {
+    @apply block mb-2 text-sm font-medium
+  }
+  .auth-input-field {
+    @apply  border-none focus:outline-none sm:text-sm rounded-lg block w-full p-2.5 bg-brown-600 border-brown-600 placeholder-brown-400 focus:outline-brown-500
+  }
+
+}

@@ -1,0 +1,23 @@
+@URL = http://localhost:3001/api
+
+###
+
+POST {{URL}}/signin HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "martins@inbox.lv",
+  "name": "martins123",
+  "password": "asdQWE123"
+}
+
+### 
+
+POST {{URL}}/signup HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "martins@inbox.lv",
+  "name": "martins123",
+  "password": "asdQWE123"
+}
